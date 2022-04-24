@@ -8,6 +8,8 @@ library(neuralnet)
 library(ggplot2)
 library(readxl)
 
+# LECTURA DATASET
+
 futbol2 <- read_excel("C:/Users/mcond/OneDrive/Escritorio/RealMadrid.xlsx")
 
 dataset <- futbol2
@@ -17,6 +19,8 @@ dataset <- data.frame(dataset)
 dataset2= dataset[ ,c(8,9,37,38)]
 
 names(dataset)
+
+# CREACIÓN DE DATASETS TRAIN Y TEST
 
 datos    <- dataset2
 n        <- nrow(datos)
